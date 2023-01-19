@@ -12,6 +12,12 @@ OR
 npm run dev
 ```
 
+You may also have to run
+
+```bash
+npm install
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 # Summary and Features of Project

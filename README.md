@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Running the Project
 
-- Visit the site at this link:
+- Visit the site at this link: https://twitter-site.vercel.app
 
 OR
 
@@ -16,7 +16,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # Summary and Features of Project
 
-The project is a Twitter clone that allows users to post tweets, edit as well as publish/unpublish tweets, and include images in their tweets. On the home page, I've included a basic paginated feed where the latest tweets are displayed. Users can see tweets without having an account on the site, but in order to post, they must authenticate themselves through Google. The site utilizes Firebase to have custom and unique usernames, and also has a combination of server-side rendering (for loading the real-time tweets coming in on the home page), and static-site-generation and incremental-site-regeneration (for periodically updating the posts themselves). There is also a search bar that allows users to search for other user profiles, where they can see the posts they've made.
+The project is a Twitter clone that allows users to post tweets, edit as well as publish/unpublish tweets, and include images in their tweets. On the home page, I've included a basic paginated feed where the latest tweets are displayed. Users can see tweets without having an account on the site, but in order to post, they must authenticate themselves through Google.
+
+The site utilizes Firebase to have custom and unique usernames, and also has a combination of server-side rendering (for loading the real-time tweets coming in on the home page), and static-site-generation and incremental-site-regeneration (for periodically updating the posts themselves) using Next.js.
+
+There is also a search bar that allows users to search for other user profiles, where they can see the posts they've made. Additionally, there is a loading icon for when a user is trying to load more tweets to view, or when uploading an image to their tweet. When uploading images to a tweet, a link will be provided that will need to be copy-pasted into the main content body as the content is rendered using react-markdown.
 
 # Time Spent Developing
 

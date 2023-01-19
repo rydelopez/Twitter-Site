@@ -1,38 +1,29 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Running the Project
 
-First, run the development server:
+- Visit the site at this link:
+
+OR
+
+- Run the site locally by running
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Summary and Features of Project
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The project is a Twitter clone that allows users to post tweets, edit as well as publish/unpublish tweets, and include images in their tweets. On the home page, I've included a basic paginated feed where the latest tweets are displayed. Users can see tweets without having an account on the site, but in order to post, they must authenticate themselves through Google. The site utilizes Firebase to have custom and unique usernames, and also has a combination of server-side rendering (for loading the real-time tweets coming in on the home page), and static-site-generation and incremental-site-regeneration (for periodically updating the posts themselves). There is also a search bar that allows users to search for other user profiles, where they can see the posts they've made.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Time Spent Developing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+I spent approximately 5-6 hours developing this project.
 
-## Learn More
+# Incomplete Features
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- For the search bar, I wasn't able to make it autocomplete users based on what is currently in the input field. I would most likely do this in a similar way to how I check for unique usernames, by periodically checking if any usernames in the database match the search term, and if so, which ones.
+- I wanted to add a way for users to like and comment on tweets. I'd likely do this by adding subcollections in the database under each tweet, showing which users have liked the tweet, and the content of the comments.
+- I'd like to have styled the site better to make it resemble the actual Twitter UI.
